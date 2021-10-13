@@ -1,0 +1,84 @@
+@import "../../global.scss";
+
+.menu{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(19, 18, 18);
+    position: fixed;
+    top: 0;
+    right:-300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    &.active{
+        right: 0;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 300;
+        color: white;
+        width: 60%;
+
+        li{
+            margin-bottom: 25px;
+
+            a{
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover{
+                font-weight: 500;
+            }
+            @include smobile{
+                font-size: 25px;
+            }
+        }
+    }
+    .bottom{
+        opacity: 0;
+        position: absolute;
+        bottom: 30px;
+        .no{
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .socials{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .email{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .insta{
+            margin-right: 10px;
+            color: white;
+        }
+        .linkedin{
+            margin-right: 10px;
+            color: white;
+        }
+
+        .github{
+            color: white;
+        }
+        @include mobile{
+            opacity: 1;
+            color: white;
+        }
+
+    }
+}

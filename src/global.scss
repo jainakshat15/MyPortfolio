@@ -1,0 +1,16 @@
+$mainColor: #21035e;
+
+$width:800px;
+$swidth: 350px;
+
+@mixin mobile {
+    @media(max-width: #{$width}){
+        @content
+    }
+    
+}
+@mixin smobile {
+    @media (max-width: #{$swidth}) {
+        @content
+    }
+}
