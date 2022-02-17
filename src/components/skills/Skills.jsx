@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
-import "./portfolio.scss"
-import { featuredPortfolio,webPortfolio, mobilePortfolio, contentPortfolio } from "../../data";
+import SkillsList from "../skillsList/SkillsList";
+import "./skills.scss"
+import { codingLanguages,webDevelopment, Other, Languages } from "../../data";
 
 
-export default function Portfolio() {
+export default function Skills() {
 
-    const [selected, setSelected] = useState("featured");
+    const [selected, setSelected] = useState("coding");
     const [data, setData] = useState([]);
     const list = [
         {
-            id: "featured",
+            id: "coding",
             title: "Coding-Languages",
         },
         {
@@ -18,12 +18,12 @@ export default function Portfolio() {
             title: "Web-Development",
         },
         {
-            id: "mobile",
+            id: "other",
             title: "Other",
         },
         
         {
-            id: "content",
+            id: "languages",
             title: "Languages",
         },
        
@@ -31,39 +31,37 @@ export default function Portfolio() {
 
     useEffect(()=>{
         switch(selected){
-            case "featured":
-                setData(featuredPortfolio);
+            case "coding":
+                setData(codingLanguages);
                 break;
             case "web":
-                setData(webPortfolio);
+                setData(webDevelopment);
                 break;
-            case "mobile":
-                setData(mobilePortfolio);
+            case "other":
+                setData(Other);
                 break;
-            case "content":
-                setData(contentPortfolio);
+            case "languages":
+                setData(Languages);
                 break;
             default:
-                setData(featuredPortfolio);
+                setData(codingLanguages);
         }
     },[selected])
     return (
-        <div className="portfolio" id="portfolio">
+        <div className="skills" id="skills">
             <h1>SKILLS</h1>
             <ul>
                 {list.map(item=>(
-                    <PortfolioList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
+                    <SkillsList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
                 ))}
             </ul>
             <div className="container">
                 {data.map((d)=>(
                     <div className="item">
-                    <img src={d.img} alt="" />
+                    <img src={d.img} alt=""/>
                     <h3>{d.title}</h3>
                 </div>
                 ))}
-                
-                
             </div>
         </div>
     )

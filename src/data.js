@@ -1,43 +1,53 @@
-export const featuredPortfolio = [
+export const codingLanguages = [
+    
     {
       id: 1,
-      title: "C",
-      img:
-        "assets/c.png",
-    },
-    {
-      id: 2,
       title: "C++",
       img:
         "assets/c++.png",
     },
     {
-      id: 3,
+      id: 2,
       title: "Python",
       img:
         "assets/python.jpg",
     },
-    {
-      id: 4,
-      title: "Java",
-      img:
-        "assets/java.png",
-    },
     
   ];
   
-  export const webPortfolio = [
+  export const webDevelopment = [
     {
       id: 1,
-      title: "React js",
+      title: "React Js",
       img: "assets/react.png",
      
+    },
+    {
+      id: 6,
+      title: "Node Js",
+      img: "assets/node.png",
+      
+    },
+    {
+      id: 7,
+      title: "Express Js",
+      img: "assets/express.jpeg",
+    },
+    {
+      id: 5,
+      title: "MongoDB",
+      img: "assets/mongodb.jpg",
     },
     {
       id: 2,
       title: "Django",
       img: "assets/django.png",
       
+    },
+    {
+      id: 11,
+      title: "JavaScript",
+      img: "assets/js.png",
     },
     {
       id: 3,
@@ -50,14 +60,24 @@ export const featuredPortfolio = [
       img: "assets/css.png",
     },
     {
-      id: 5,
-      title: "MongoDB",
-      img: "assets/mongodb.jpg",
+      id: 8,
+      title: "Redux",
+      img: "assets/redux.jpg",
     },
-    
+    {
+      id: 9,
+      title: "Bootstrap",
+      img: "assets/bootstrap.png",
+    },
+    {
+      id: 10,
+      title: "Material-UI",
+      img: "assets/material.png",
+    },
+   
   ];
   
-  export const mobilePortfolio = [
+  export const Other = [
     {
       id: 1,
       title: "Data Structures",
@@ -89,6 +109,12 @@ export const featuredPortfolio = [
         "assets/os.jpg",
     },
     {
+      id: 7,
+      title: "OOP",
+      img:
+        "assets/oop.png",
+    },
+    {
       id: 6,
       title: "Git",
       img:
@@ -97,7 +123,7 @@ export const featuredPortfolio = [
   ];
   
   
-  export const contentPortfolio = [
+  export const Languages = [
     {
       id: 1,
       title: "English",

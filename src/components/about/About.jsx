@@ -1,6 +1,6 @@
-import "./testimonials.scss"
+import "./about.scss"
 
-export default function Testimonials() {
+export default function About() {
     const data = [
         {
           id: 1,
@@ -8,7 +8,6 @@ export default function Testimonials() {
           
           img:
             "assets/about.jpg",
-          
           desc:
             <ul>
               <li>- 📍Jaipur, Rajasthan</li>
@@ -54,11 +53,11 @@ export default function Testimonials() {
         },
       ];
     return (
-        <div className="testimonials" id="testimonials">
+        <div className="about" id="about">
             <h1>ABOUT</h1>
             <div className="container">
                 {data.map((d)=>(
-                <div className={d.featured? "card featured" : "card"}>
+                <div className={d.featured? "card featured" : "card"} key={d.id}>
 
                     <img src={d.img} alt="" />
                     <div className="center">

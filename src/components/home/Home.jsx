@@ -1,8 +1,8 @@
-import "./intro.scss"
+import "./home.scss"
 import { init } from 'ityped'
 import { useEffect, useRef} from "react"
 
-export default function Intro() {
+export default function Home() {
 
     const textRef=useRef();
     useEffect(()=>{
@@ -16,7 +16,7 @@ export default function Intro() {
 
     },[]);
     return (
-        <div className="intro" id="intro">
+        <div className="home" id="home">
             <div className="left">
                 <div className="imgContainer">
                     <img src="assets/man.jpg" alt="" />
@@ -28,7 +28,7 @@ export default function Intro() {
                     <h1>Akshat Jain</h1>
                     <h3><span ref={textRef}></span></h3>
                 </div>
-                <a href="#testimonials">
+                <a href="#about">
                     <img src="assets/down.png" alt="" />
                 </a>
             </div>

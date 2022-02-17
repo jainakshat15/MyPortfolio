@@ -4,16 +4,25 @@
     background-color: white;
     display: flex;
 
-    @include mobile{
+@media screen and (max-width: 1000px) {
         flex-direction: column;
     }
 
     .left{
         flex: 1;
         overflow: hidden;
+       
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
 
         img{
             height: 100%;
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+            object-fit: cover;
+
         }
     }
 
@@ -23,6 +32,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
 
         h2{
             font-size: 30px;
@@ -41,11 +51,11 @@
                 height: 30px;
                 font-size: 14px;
 
-                @include mobile{
+                @media screen and (max-width: 1000px) {
                     width: 200px;
                     height: 20px;
                 }
-                @include smobile{
+                @media screen and (max-width: 1000px) {
                     width: 185px;
                     height: 20px;
                 }
@@ -56,11 +66,11 @@
                 height: 200px;
                 font-size: 14px;
 
-                @include mobile{
+                @media screen and (max-width: 1000px) {
                     width: 200px;
                     height: 100px;
                 }
-                @include smobile{
+                @media screen and (max-width: 1000px) {
                     width: 185px;
                     height: 100px;
                 }

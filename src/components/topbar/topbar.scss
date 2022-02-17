@@ -44,7 +44,7 @@
                 align-items: center;
                 margin-right: 30px;
 
-                @include mobile{
+                @media screen and (max-width: 970px) {
                     display: none;
                 }
                 .icon{
@@ -66,7 +66,7 @@
                 display: flex;
                 margin-right: 50px;
                
-                @include mobile{
+                @media screen and (max-width: 970px) {
                     display: none;
                 }
 
@@ -111,7 +111,7 @@
     }
 
 &.active{
-    background-color: $mainColor;
+    background-color: black;
     color: white;
 
     .insta{

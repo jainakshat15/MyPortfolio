@@ -7,7 +7,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">AKSHAT JAIN</a>
+                    <a href="#home" className="logo">AKSHAT JAIN</a>
                     <div className="itemContainer">
                         <Person className="icon"/>
                         <span>+91 7597666863</span>
@@ -23,10 +23,6 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                         <a href="https://github.com/jainakshat15"><GitHub className="github"/></a>
                         <a href="https://www.linkedin.com/in/15-jain-akshat/"><LinkedIn className="linkedin"/></a>
                         <a href="https://www.instagram.com/_.jainakshat._/"><Instagram  className="insta" /></a>
-                       
-                            
-                            
-                        
                     </div>
                     <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
