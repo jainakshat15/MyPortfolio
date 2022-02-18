@@ -6,16 +6,16 @@ import { codingLanguages,webDevelopment, Other, Languages } from "../../data";
 
 export default function Skills() {
 
-    const [selected, setSelected] = useState("coding");
+    const [selected, setSelected] = useState("web");
     const [data, setData] = useState([]);
     const list = [
         {
-            id: "coding",
-            title: "Coding-Languages",
-        },
-        {
             id: "web",
             title: "Web-Development",
+        },
+        {
+            id: "coding",
+            title: "Coding-Languages",
         },
         {
             id: "other",
@@ -44,7 +44,7 @@ export default function Skills() {
                 setData(Languages);
                 break;
             default:
-                setData(codingLanguages);
+                setData(webDevelopment);
         }
     },[selected])
     return (
